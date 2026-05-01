@@ -10,7 +10,7 @@ import HeaderLogo from "@/components/ui/Logos/HeaderLogo/HeaderLogo";
 const Header = () => {
 
     return (
-        <div className="w-full px-4 md:px-5 lg:px-[30px]">
+        <div className="w-full px-4 bg-[#f7f7f8] md:px-5 lg:px-[30px]">
             <div className="w-full py-[16.5px] border-b border-[#F1F1F3] relative transition-all duration-300 ease-linear md:pt-4 md:pb-5 lg:pt-[20.5px] lg:pb-[24.5px]">
                 <Container>
                     <header className="w-full flex items-center justify-between">
