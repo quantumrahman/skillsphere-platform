@@ -9,17 +9,20 @@ export const contactInfo = [
     {
         id: 1,
         icon: mail,
-        mail: 'skillsphere@learn.com',
+        alt: 'mail icon',
+        details: 'support@skillsphere.com',
     },
     {
         id: 2,
         icon: phone,
-        phone: '+880 1254-568954',
+        alt: 'phone icon',
+        details: '+880 1254-568954',
     },
     {
         id: 3,
         icon: location,
-        location: 'Dhaka, Bangladesh',
+        alt: 'location icon',
+        details: 'Dhaka, Bangladesh',
     },
 ];
 
@@ -28,16 +31,19 @@ export const socialInfo = [
         id: 1,
         icon: facebook,
         path: '/',
+        alt: 'facebook icon',
     },
     {
         id: 2,
         icon: twitter,
         path: '/',
+        alt: 'twitter icon',
     },
     {
         id: 3,
         icon: linkedin,
         path: '/',
+        alt: 'linkedin icon',
     },
 ];
 
