@@ -1,6 +1,8 @@
 import { Be_Vietnam_Pro } from "next/font/google";
 import "../globals.css";
+
 import Header from "@/components/shared/Header/Header";
+import Footer from "@/components/shared/Footer/Footer";
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ['latin'],
@@ -19,9 +21,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${beVietnamPro.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#f7f7f8] px-4 md:px-5 lg:px-[30px]">
+      <body className="min-h-full flex flex-col justify-between bg-[#f7f7f8]">
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
