@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container/Container";
-import logo from "@/assets/image/logo.png";
 import menu from "@/assets/icons/menu.png";
 import HeaderNav from "@/components/ui/Navbars/HeaderNav/HeaderNav";
 import SignInButton from "@/components/ui/Buttons/SignInButton/SignInButton";
