@@ -25,7 +25,7 @@ export default function AuthLayout({ children }) {
             lang="en"
             className={`${beVietnamPro.variable} h-full antialiased`}
         >
-            <body className="min-h-full">
+            <body className="min-h-full flex items-center justify-center bg-[#f7f7f8]">
                 {children}
             </body>
         </html>
