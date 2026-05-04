@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function AuthLayout({ children }) {
     return (
-        <div className={`${beVietnamePro.variable} w-full min-h-screen antialiased`}>
+        <div className={`${beVietnamePro.variable} w-full min-h-screen antialiased bg-black bg-[radial-gradient(circle_at_top,#0C342C_0%,#050A08_60%,#000000_100%)]`}>
             {children}
         </div>
     );
