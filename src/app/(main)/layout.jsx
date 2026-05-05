@@ -1,5 +1,6 @@
 import { Be_Vietnam_Pro } from "next/font/google";
 import "../globals.css";
+import Header from "@/components/shared/Header/Header";
 
 const beVietnamPro = Be_Vietnam_Pro({
     variable: "--font-be-vietnam-pro",
@@ -14,8 +15,9 @@ export const metadata = {
 
 export default function MainLayout({ children }) {
     return (
-        <main className={`${beVietnamPro.variable} w-full min-h-screen`}>
+        <div className={`${beVietnamPro.variable} w-full min-h-screen bg-black relative`}>
+            <Header></Header>
             {children}
-        </main>
+        </div>
     );
 };
