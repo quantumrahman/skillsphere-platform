@@ -1,7 +1,7 @@
 "use client";
 
 import { navlinks } from "@/constants/links";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { RiMenuLine } from "react-icons/ri";
 
 import Link from "next/link";
@@ -10,7 +10,6 @@ import Logo from "@/components/ui/Logo/Logo";
 import Button from "@/components/ui/Buttons/Button/Button";
 
 const Header = () => {
-    const pathname = usePathname();
     const router = useRouter();
 
     const handleLoginClick = () => {
@@ -28,12 +27,7 @@ const Header = () => {
                                 <Link 
                                     key={link?.id} 
                                     href={link?.path} 
-                                    className={`text-sm font-normal lg:text-lg transition-all duration-200 ease-linear
-                                        ${pathname === link?.path
-                                            ? "text-[#E6FFF9]"
-                                            : "text-[#E6FFF9] hover:text-[#0FAE96]"
-                                        }
-                                    `}
+                                    className="text-sm font-normal text-[#E6FFF9] lg:text-lg transition-all duration-200 ease-linear hover:text-[#0FAE96]"
                                 >
                                     {link?.name}
                                 </Link>
