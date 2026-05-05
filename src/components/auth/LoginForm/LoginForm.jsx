@@ -76,9 +76,9 @@ const LoginForm = () => {
             <div className="w-full my-[24px] lg:my-[30px]">
                 <SocialLogin />
             </div>
-            <div className="w-full text-center">
-                <div className="flex items-center justify-center gap-2">
-                    <span className="text-sm font-normal text-[#E6FFF9] md:text-base lg:text-lg transition-all duration-300 ease-linear">{"Don't have an account?"}</span>
+            <div className="w-full flex justify-center">
+                <span className="text-sm font-normal text-[#E6FFF9] md:text-base lg:text-lg transition-all duration-300 ease-linear flex items-center justify-center flex-wrap gap-2">
+                    {"Don't have an account?"}
                     <div className="flex items-center justify-center">
                         <Link 
                             href={'/auth/signup'}
@@ -88,7 +88,7 @@ const LoginForm = () => {
                         </Link>
                         <RiArrowRightUpLine color="#E6FFF9" className="text-xl md:text-2xl mt-1"/>
                     </div>
-                </div>
+                </span>
             </div>
         </div>
     );
