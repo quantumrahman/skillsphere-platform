@@ -18,7 +18,7 @@ const Header = () => {
     };
 
     return (
-        <div className="w-full py-[14px] md:py-4 lg:py-5 transition-all duration-300 ease-linear border-b border-white/10 absolute top-0">
+        <div className="w-full py-[14px] md:py-4 lg:py-5 transition-all duration-300 ease-linear border-b border-white/10 fixed top-0">
             <Container>
                 <header className="w-full flex items-center justify-between">
                     <div className="w-fit flex items-center justify-center gap-[50px]">
