@@ -6,7 +6,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import Link from "next/link";
 import FormInput from "@/components/ui/Inputs/FormInput/FormInput.jsx";
 import FormButton from "@/components/ui/Buttons/FormButton/FormButton.jsx";
-import SocialLogin from "../SocialLogin/SocialLogin";
+import SocialLogin from "../SocialLogin/SocialLogin.jsx";
 
 const LoginForm = () => {
     const [formData, setFormData] = useState({
@@ -36,7 +36,7 @@ const LoginForm = () => {
         const email = formData.email;
         const password = formData.password;
 
-        const emailRegx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!email) {
             errors.email = "Please enter your email.";
         } else if (!emailRegx.test(email)) {
@@ -69,8 +69,22 @@ const LoginForm = () => {
     return (
         <div className="w-full">
             <form onSubmit={handleFormSubmit}>
-                <FormInput type="text" name="email" placeholder="Email address" value={formData?.email} onChange={handleOnChange} error={errors.email}/>
-                <FormInput type="password" name="password" placeholder="Password" value={formData?.password} onChange={handleOnChange} error={errors.password}/>
+                <FormInput 
+                    type="text" 
+                    name="email" 
+                    placeholder="Email address" 
+                    value={formData?.email} 
+                    onChange={handleOnChange} 
+                    error={errors.email}
+                />
+                <FormInput 
+                    type="password" 
+                    name="password" 
+                    placeholder="Password" 
+                    value={formData?.password} 
+                    onChange={handleOnChange} 
+                    error={errors.password}
+                />
                 <FormButton>Login</FormButton>
             </form>
             <div className="w-full my-[24px] lg:my-[30px]">
@@ -86,7 +100,10 @@ const LoginForm = () => {
                         >
                             <span>Sign Up</span>
                         </Link>
-                        <RiArrowRightUpLine color="#E6FFF9" className="text-xl md:text-2xl mt-1"/>
+                        <RiArrowRightUpLine 
+                            color="#E6FFF9" 
+                            className="text-xl md:text-2xl mt-1"
+                        />
                     </div>
                 </span>
             </div>
