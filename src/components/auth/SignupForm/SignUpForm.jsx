@@ -4,8 +4,8 @@ import { useState } from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
 
 import Link from "next/link";
-import FormButton from "@/components/ui/Buttons/FormButton/FormButton";
-import FormInput from "@/components/ui/Inputs/FormInput/FormInput";
+import FormInput from "@/components/ui/Inputs/FormInput/FormInput.jsx";
+import FormButton from "@/components/ui/Buttons/FormButton/FormButton.jsx";
 
 const SignUpForm = () => {
     const [formData, setFormData] = useState({
