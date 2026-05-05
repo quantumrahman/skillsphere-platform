@@ -1,5 +1,5 @@
 import Logo from "@/components/ui/Logo/Logo";
-import SignUpForm from "@/components/auth/SignupForm/SignUpForm";
+import SignUpForm from "@/components/auth/SignUpForm/SignUpForm";
 
 const SignUpPage = () => {
 
